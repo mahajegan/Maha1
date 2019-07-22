@@ -33,6 +33,7 @@ public class Demo1 {
 		chdriver.findElement(By.name("txtPassword")).sendKeys("admin123");
 		chdriver.findElement(By.id("btnLogin")).click();
 		String ActualTitle=chdriver.getTitle();
+		System.out.println("Lets print the actual title");
 		System.out.println("Actual Title is: " +ActualTitle);
 		if (ExpectedTitle.equals(ActualTitle)){
 			//chdriver.findElement(By.linkText("Welcome Admin")).click();
